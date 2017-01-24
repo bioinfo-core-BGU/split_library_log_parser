@@ -6,6 +6,10 @@
 Welcome to split_library_log_parser's documentation!
 ====================================================
 
+**Author**: Menachem Sklarz
+
+**Date**:   24/1/2017
+
 Why should I need this?
 -------------------------
 
