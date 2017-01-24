@@ -1,0 +1,50 @@
+Input file paths
+Sequence read filepath: 16S.sample1.2/16S.sample1.2.J.fastq (md5: 80740907e9495c21663786b6994a4c1a)
+Quality filter results
+Total number of input sequences: 31888
+Barcode not in mapping file: 0
+Read too short after quality truncation: 393
+Count of N characters exceeds limit: 0
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 463.00
+16S.sample1.2	31495
+
+Total number seqs written	31495
+---
+
+Input file paths
+Sequence read filepath: 16S.sample2.7/16S.sample2.7.J.fastq (md5: c93b4fba625878777c63899ae551247a)
+Quality filter results
+Total number of input sequences: 30819
+Barcode not in mapping file: 0
+Read too short after quality truncation: 430
+Count of N characters exceeds limit: 1
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 465.00
+16S.sample2.7	30388
+
+Total number seqs written	30388
+---
+
+Input file paths
+Sequence read filepath: 16S.sample1.4/16S.sample1.4.J.fastq (md5: 64c34433189a3de5b2bd85a7813e0a82)
+Quality filter results
+Total number of input sequences: 31020
+Barcode not in mapping file: 0
+Read too short after quality truncation: 141
+Count of N characters exceeds limit: 3
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 465.00
+16S.sample1.4	30876
+
+Total number seqs written	30876
+---
