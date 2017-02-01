@@ -9,6 +9,11 @@ Welcome to split_library_log_parser's documentation!
 Why should I need this?
 -------------------------
 
+When using QIIME, one of the first steps is the ``split_libraries_fastq.py`` script which *performs demultiplexing of Fastq sequence data where barcodes and sequences are contained in two separate fastq files*, while also doing some basic quality testing.
+
+This step creates a log file, *split_library_log.txt*, which contains statistics about the number of reads per sample that passed the various tests and manipulations.
+
+``parse_split_library_log.R`` converts this text file into a tsv table, which is more convenient for comparison between the samples etc. 
 
 Usage
 ---------
