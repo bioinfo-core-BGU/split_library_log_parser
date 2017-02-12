@@ -2,9 +2,6 @@ library(magrittr)
 library(optparse)
 library(tools)
 
-# I added this for testing
-
-
 
 ## Author: Menachem Sklarz
 ## GITHUB repository: https://github.com/sklarz-bgu/split_library_log_parser.git
@@ -100,19 +97,29 @@ Median_length <- grep(pattern = "Median sequence length",t1,value = T)  %>%
     unlist         %>%
     as.numeric
 
-
+writeLines(con = opt$output, 
+           text = c("## Summary of split_library_log.txt produced by parse_split_library_log.R",
+                    "## total_seqs = Total number seqs written",
+                    "## total_input = Total number of input sequences",
+                    "## barcode_missing = Barcode not in mapping file",
+                    "## too_short = Read too short after quality truncation",
+                    "## too_many_Nchars = Count of N characters exceeds limit",
+                    "## illumina_qual = Illumina quality digit = 0",
+                    "## too_many_barcode_errors = Barcode errors exceed max",
+                    "## Median_length = Median sequence length"))
+           
 write.table(x = 
-                data.frame(sample=files, 
-                           total_input = total_input ,
-                           barcode = barcode ,
-                           quality = quality ,
-                           Nchars = Nchars ,
-                           illumina_qual = illumina_qual ,
-                           barcode_errors = barcode_errors ,
-                           Median_length = Median_length,
-                           total_seqs=total_seqs),
+                data.frame(sample                  = files, 
+                           total_input             = total_input ,
+                           barcode_missing         = barcode ,
+                           too_short               = quality ,
+                           too_many_Nchars         = Nchars ,
+                           illumina_qual           = illumina_qual ,
+                           too_many_barcode_errors = barcode_errors ,
+                           Median_length           = Median_length,
+                           total_seqs              = total_seqs),
             file = opt$output,
-            append = F,
+            append = T,
             quote = F,
             sep = "\t",
             row.names = F,
