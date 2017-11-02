@@ -3,7 +3,8 @@ library(optparse)
 library(tools)
 
 
-## Author: Menachem Sklarz
+## Author: **Dr. Menachem Sklarz**, Bioinformatics core facility, National Institute of Biotechnology in the Negev, Ben Gurion University.
+
 ## GITHUB repository: https://github.com/sklarz-bgu/split_library_log_parser.git
 ## ReadsTheDocs: http://split-library-log-parser.readthedocs.io/en/latest/
 
